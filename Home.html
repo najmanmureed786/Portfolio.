@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Najman Mureed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#fav_person">Fav.Person</a></li>
+                <li><a href="#fav_city">Fav.City</a></li>
+                <li><a href="#fav_spot">Fav.Spot</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">John Doe</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#fav_person" onclick="toggleMenu()">Fav.Person</a></li>
+                <li><a href="#fav_city" onclick="toggleMenu()">Fav.City</a></li>
+                <li><a href="#fav_spot" onclick="toggleMenu()">Fav.Spot</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt=" profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Najman Mureed</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href=' https://www.linkedin.com/in/najman-mureed-1757111b8/' " />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/najmanmureed786'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/abt me.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>BS in Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, I'm Najman Mureed, a passionate 
+                        fourth-year Computer Science student with over 
+                        a year of experience in frontend web development. 
+                        I specialize in creating responsive, user-friendly 
+                        web interfaces using the latest technologies. My 
+                        academic journey and hands-on projects have equipped 
+                        me with a strong foundation in HTML, CSS, JavaScript, 
+                        and various frontend frameworks. I thrive on turning 
+                        creative ideas into functional, visually appealing websites 
+                        and am excited to bring my skills to new and challenging projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="fav_person">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Favourite personality</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Dr.Israr Ahmed</h2>
+                    <div class="article-container">
+                        <p>Dr. Israr Ahmed, a Pakistani Islamic scholar and orator,
+                            was a hugely influential figure in our life. Renowned for his Islamic lectures,
+                            he developed a devoted following throughout South Asia and beyond.
+                            His teachings resonated not just in Pakistan but with Muslim communities around the world.
+                        </p>
+                        <p>
+                            Dr. Israr Ahmed (late) Launch vigorous movement for the revival of Islam.
+                            He was founder of Markazi Anjuman Khuddam-ul-Quran Lahore, Tanzeem-e-Islami
+                            Pakistan and Tahreek-e-Khalifat Pakistan. He also started a social movement
+                            of marital simplicity. He wrote above than 70 books on different aspects of
+                            Islam and religion, and some of them were translated into English and other
+                            languages. Dr. Israr Ahmed presented Quranic Teaching in Scientific and enlightened
+                            (different) way. He was awarded Sitara-e-Imtiaz in 1981. He criticized modern democracy
+                            and prevalent electoral system and argued that the head of an Islamic state could reject
+                            the majority decisions. He wanted implementation of Islamic system in Social, Cultural,
+                            Juristic, Political and economic field.
+                        </p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/Dr Israr.jpg" alt="Profile picture" class="about-pic" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fav_city">
+        <p class="section__text__p1">My Favourite City</p>
+        <h1 class="title">Lahore</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/Lahore.jpg" alt="Profile picture" class="about-pic" />
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="article-container">
+                        <p>
+                            The Walled City of Lahore holds a special place in my
+                            heart. It's a captivating labyrinth of history, brimming
+                            with character around every corner. Within its ancient
+                            walls, Mughal grandeur collides with the vibrant pulse of modern life.
+                        </p>
+                        <p>
+                            Whether I'm getting lost in the maze of bustling bazaars or
+                            marveling at the architectural wonders like the Lahore Fort,
+                            the city offers a unique experience. It's a place where the
+                            aroma of freshly baked bread mingles with the echoes of centuries
+                            past, creating an atmosphere unlike any other.
+                        </p>
+                        <p>
+                            The Walled City isn't just a historical monument; it's a
+                            living, breathing testament to Lahore's enduring spirit.
+                            It's a place I find myself constantly drawn back to, eager
+                            to explore its hidden gems and soak up its captivating energy.
+                        </p>
+                        <p>
+                            Lahore offers a unique blend of history,
+                            culture, and modern life, making it a
+                            captivating destination for travelers.
+                            Whether you're fascinated by Mughal architecture,
+                            eager to savor Pakistani cuisine, or simply want
+                            to experience the vibrant energy of a bustling
+                            metropolis, Lahore has something for everyone.
+                        </p>
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section class="Lahore">
+        <div class="container" >
+            <div class="row">
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L1.jpg" alt="Image 1" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L2.jpg" alt="Image 2" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L3.jpg" alt="Image 3" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L4.jpg" alt="Image 4" style="width: 20rem;height: 20rem;"></div>
+            </div>
+            <div class="row" style="margin-top: 1rem;">
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L8.jpg" alt="Image 1" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L5.jpg" alt="Image 2" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L6.jpg" alt="Image 3" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/L7.jpg" alt="Image 4" style="width: 20rem;height: 20rem;"></div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Sll'"
+    />
+        </section> 
+    <section id="fav_spot">
+        <p class="section__text__p1">Favorite Tourist spots</p>
+        <h1 class="title">Dhofar,Oman</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <p>
+                            Ah, Dhofar during the Khareef season!  
+                            That's a truly special place.  Imagine 
+                            a stark desert landscape transformed into 
+                            a lush paradise.  During Khareef, the Dhofar 
+                            region comes alive with a blanket of vibrant 
+                            green hills, misty mornings, and waterfalls 
+                            cascading down the mountains.
+                        </p>
+                        <p>
+                            The cool monsoon winds, a stark contrast to 
+                            the usual desert heat, are a welcome relief.  
+                            The city of Salalah becomes a hub of activity, 
+                            with vibrant souqs offering local crafts and 
+                            the aroma of freshly brewed Omani coffee wafting 
+                            through the air.
+                        </p>
+                        <p>
+                            Nature lovers can trek through the verdant mountains, 
+                            explore hidden wadis (valleys), or simply relax on the 
+                            pristine beaches with the sound of crashing waves.  
+                            Dhofar during Khareef offers a unique escape, a chance 
+                            to experience a breathtaking natural phenomenon and immerse
+                            yourself in the rich culture of the region.  It's a place 
+                            that stays with you long after the season ends.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=yyYb-snOT44">Discover my Favorite Spot by clicking.</a>
+                    </div>
+                </div>
+                
+                <div class="details-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/dhfr.jpg" alt="Profile picture" class="about-pic" />
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+                    onclick="location.href='./#contact'" />
+    </section>
+    <section class="Salalah">
+        <div class="container" >
+            <div class="row">
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s1.jpg" alt="Image 1" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s2.jpg" alt="Image 2" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s3.jpg" alt="Image 3" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s4.jpg" alt="Image 4" style="width: 20rem;height: 20rem;"></div>
+            </div>
+            <div class="row" style="margin-top: 1rem;">
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s8.jpg" alt="Image 1" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s5.jpg" alt="Image 2" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s6.jpg" alt="Image 3" style="width: 20rem;height: 20rem;"></div>
+            <div class="col-md-3" style="display: flex;justify-content: center;align-items: center;"><img src="/assets/s7.jpg" alt="Image 4" style="width: 20rem;height: 20rem;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="https://github.com/najmanmureed786">
+                <img
+                src="./assets/github.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"/>
+            </a>
+            </div>
+            <div class="contact-info-container">
+                <a href="03102121311">
+                <img
+                src="./assets/call.png"
+                alt="Contact number"
+                class="icon contact-icon"/>
+            </a>
+            </div>
+        <div class="contact-info-container">
+            <a href="mailto:najmanmureed2255@gmail.com">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            </a>
+            
+        </div>
+        <div class="contact-info-container">
+            <a href="https://www.linkedin.com/in/najman-mureed-1757111b8/">
+            <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"/>
+        </a>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#fav_person">Fav.Person</a></li>
+                <li><a href="#fav_city">Fav.City</a></li>
+                <li><a href="#fav_spot">Fav.Spot</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Najman Mureed. All Rights Reserved.</p>
+      </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
